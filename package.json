@@ -1,0 +1,35 @@
+{
+  "name": "parallel-async-emitter",
+  "version": "1.0.0",
+  "description": "Async/await-based event emitter which emits in parallel",
+  "author": "Stephen Belanger <admin@stephenbelanger.com> (http://stephenbelanger.com/)",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "precoverage": "npm run test",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "nyc tap test.js"
+  },
+  "keywords": [
+    "parallel",
+    "async",
+    "event",
+    "emitter"
+  ],
+  "homepage": "https://github.com/qard/parallel-async-emitter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qard/parallel-async-emitter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qard/parallel-async-emitter/issues"
+  },
+  "devDependencies": {
+    "codecov": "^3.6.1",
+    "nyc": "^15.0.0",
+    "standard": "^14.3.1",
+    "tap": "^14.10.5"
+  }
+}
